@@ -118,7 +118,7 @@ STRINGS:
 
     # warn rmv callback
     warn_no_admin_alert: "⚠ You are NOT admin and cannot remove warnings!"
-    warn_btn_rmvl_success: "✅ Warnings removed by the way @UnknownHackerOO1 madarjatt hai respect Alpha bro and krishna {admin}!"
+    warn_btn_rmvl_success: "✅ Warnings  𝕳𝖆𝖘 𝖇𝖊𝖊𝖓 𝖙𝖆𝖐𝖊𝖓 𝖉𝖔𝖜𝖓 𝖇𝖞 𝖕𝖊𝖆𝖈𝖊𝖋𝖚𝖑 😉 𝖆𝖉𝖒𝖎𝖓𝖘 {admin}!"
 
     # /warns
     warns_header: "Here are your warns in this chat \n\n"
