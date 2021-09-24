@@ -1,6 +1,6 @@
-# Copyright (C) 2021 Red-Aura & TeamDaisyX & HamkerCat
+# Copyright (C) 2021 Red-Aura & TeamOl𝕚ᵛ𝕚a❣️X & HamkerCat
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Ol𝕚ᵛ𝕚a❣️ (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -27,11 +27,11 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
-from DaisyX import BOT_ID
-from DaisyX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
-from DaisyX.function.inlinehelper import arq
-from DaisyX.function.pluginhelpers import admins_only, edit_or_reply
-from DaisyX.services.pyrogram import pbot as daisyx
+from Ol𝕚ᵛ𝕚a❣️X import BOT_ID
+from Ol𝕚ᵛ𝕚a❣️X.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
+from Ol𝕚ᵛ𝕚a❣️X.function.inlinehelper import arq
+from Ol𝕚ᵛ𝕚a❣️X.function.pluginhelpers import admins_only, edit_or_reply
+from Ol𝕚ᵛ𝕚a❣️X.services.pyrogram import pbot as Ol𝕚ᵛ𝕚a❣️x
 
 translator = google_translator()
 
@@ -60,17 +60,17 @@ async def fetch(url):
         return
 
 
-daisy_chats = []
+Ol𝕚ᵛ𝕚a❣️_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 
 
-@daisyx.on_message(
+@Ol𝕚ᵛ𝕚a❣️x.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
 async def hmm(_, message):
-    global daisy_chats
+    global Ol𝕚ᵛ𝕚a❣️_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -82,20 +82,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Daisy AI Already Activated In This Chat")
+            await lel.edit("Ol𝕚ᵛ𝕚a❣️ AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Ol𝕚ᵛ𝕚a❣️ AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Daisy AI Was Not Activated In This Chat")
+            await lel.edit("Ol𝕚ᵛ𝕚a❣️ AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Ol𝕚ᵛ𝕚a❣️ AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -111,7 +111,7 @@ async def hmm(_, message):
         )
 
 
-@daisyx.on_message(
+@Ol𝕚ᵛ𝕚a❣️x.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -137,17 +137,17 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
+        test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
+        response = response.replace("Aco", "Ol𝕚ᵛ𝕚a❣️")
+        response = response.replace("aco", "Ol𝕚ᵛ𝕚a❣️")
 
         pro = response
         try:
-            await daisyx.send_chat_action(message.chat.id, "typing")
+            await Ol𝕚ᵛ𝕚a❣️x.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -195,15 +195,15 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
+        test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
-        response = response.replace("Luna", "Daisy")
-        response = response.replace("luna", "Daisy")
+        response = response.replace("Aco", "Ol𝕚ᵛ𝕚a❣️")
+        response = response.replace("aco", "Ol𝕚ᵛ𝕚a❣️")
+        response = response.replace("Luna", "Ol𝕚ᵛ𝕚a❣️")
+        response = response.replace("luna", "Ol𝕚ᵛ𝕚a❣️")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -212,13 +212,13 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await daisyx.send_chat_action(message.chat.id, "typing")
+            await Ol𝕚ᵛ𝕚a❣️x.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
 
 
-@daisyx.on_message(
+@Ol𝕚ᵛ𝕚a❣️x.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -269,26 +269,26 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
+    test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Ol𝕚ᵛ𝕚a❣️")
+    response = response.replace("aco", "Ol𝕚ᵛ𝕚a❣️")
 
     pro = response
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, dest=lan)
         pro = pro.text
     try:
-        await daisyx.send_chat_action(message.chat.id, "typing")
+        await Ol𝕚ᵛ𝕚a❣️x.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
-@daisyx.on_message(
-    filters.regex("Daisy|daisy|DaisyX|daisyx|Daisyx")
+@Ol𝕚ᵛ𝕚a❣️x.on_message(
+    filters.regex("Ol𝕚ᵛ𝕚a❣️|Ol𝕚ᵛ𝕚a❣️|Ol𝕚ᵛ𝕚a❣️X|Ol𝕚ᵛ𝕚a❣️x|Ol𝕚ᵛ𝕚a❣️x")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -343,11 +343,11 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
+    test = test.replace("Ol𝕚ᵛ𝕚a❣️", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Ol𝕚ᵛ𝕚a❣️")
+    response = response.replace("aco", "Ol𝕚ᵛ𝕚a❣️")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -357,7 +357,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await daisyx.send_chat_action(message.chat.id, "typing")
+        await Ol𝕚ᵛ𝕚a❣️x.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
@@ -365,14 +365,14 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-DAISY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+Ol𝕚ᵛ𝕚a❣️ AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from daisy
+ - /ask [question]: Ask question from Ol𝕚ᵛ𝕚a❣️
  - /ask [reply to voice note]: Get voice reply
  
 """
