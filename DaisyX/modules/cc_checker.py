@@ -41,7 +41,7 @@ async def is_register_admin(chat, user):
 @register(pattern="^/gen (.*)")
 async def alive(event):
     if event.is_group:
-            pass:
+            pass
             return
     sender = await event.get_sender()
     fname = sender.first_name
@@ -73,7 +73,7 @@ async def alive(event):
 @register(pattern="^/key (.*)")
 async def alive(event):
     if event.is_group:
-            pass:
+            pass
             return
     sender = await event.get_sender()
     fname = sender.first_name
@@ -114,7 +114,7 @@ async def alive(event):
 @register(pattern="^/ss (.*)")
 async def alive(event):
     if event.is_group:
-            pass:
+            pass
             return
     sender = await event.get_sender()
     fname = sender.first_name
@@ -145,7 +145,7 @@ async def alive(event):
 @register(pattern="^/pp (.*)")
 async def alive(event):
     if event.is_group:
-            pass:
+            pass
             return
     sender = await event.get_sender()
     fname = sender.first_name
@@ -177,7 +177,6 @@ async def alive(event):
 async def alive(event):
     if event.is_group:
             pass
-        else:
             return
     sender = await event.get_sender()
     fname = sender.first_name
@@ -208,7 +207,7 @@ async def alive(event):
 @register(pattern="^/au (.*)")
 async def alive(event):
     if event.is_group:
-            pass:
+            pass
             return
     sender = await event.get_sender()
     fname = sender.first_name
@@ -239,7 +238,7 @@ async def alive(event):
 @register(pattern="^/bin (.*)")
 async def alive(event):
     if event.is_group:
-            pass:
+            pass
             return
     sender = await event.get_sender()
     fname = sender.first_name
