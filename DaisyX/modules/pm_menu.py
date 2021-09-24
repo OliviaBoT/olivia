@@ -81,13 +81,13 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://github.com/TeamDaisyX/"
+            strings["btn_source"], url="https://telegra.ph/file/d29c58ced5067cc20315b.jpg"
         ),
     )
     buttons.add(
         InlineKeyboardButton(strings["btn_channel"], url="https://t.me/DaisyXUpdates"),
         InlineKeyboardButton(
-            strings["btn_group"], url="https://t.me/DaisySupport_Official"
+            strings["btn_group"], url="https://t.me/useless_group_xd"
         ),
     )
     buttons.add(
