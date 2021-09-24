@@ -92,8 +92,8 @@ async def get_start_func(message, strings, edit=False):
     )
     buttons.add(
         InlineKeyboardButton(
-            "👸🏼 Add DaisyX to your group",
-            url=f"https://telegram.me/daisyxbot?startgroup=true",
+            "👸🏼 Add Olivia to your group",
+            url=f"https://telegram.me/Miss_OliviboT?startgroup=true",
         )
     )
     # Handle error when user click the button 2 or more times simultaneously
