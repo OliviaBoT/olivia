@@ -27,11 +27,11 @@ import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
-from Ol𝕚ᵛ𝕚a❣️X import BOT_ID
-from Ol𝕚ᵛ𝕚a❣️X.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
-from Ol𝕚ᵛ𝕚a❣️X.function.inlinehelper import arq
-from Ol𝕚ᵛ𝕚a❣️X.function.pluginhelpers import admins_only, edit_or_reply
-from Ol𝕚ᵛ𝕚a❣️X.services.pyrogram import pbot as Ol𝕚ᵛ𝕚a❣️x
+from DaisyX import BOT_ID
+from DaisyX.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
+from DaisyX.function.inlinehelper import arq
+from DaisyX.function.pluginhelpers import admins_only, edit_or_reply
+from DaisyX.services.pyrogram import pbot as DaisyX
 
 translator = google_translator()
 
