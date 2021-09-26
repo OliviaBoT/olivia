@@ -227,8 +227,8 @@ async def _(event):
     userid = event.sender_id
     first_name = user.first_name
     packname = f"{first_name}'s Sticker Vol.{pack}"
-    packshortname = f"DaisyX_stickers_{userid}"
-    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Daisy steal it")
+    packshortname = f"Ol𝕚ᵛ𝕚a❣️_stickers_{userid}"
+    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Ol𝕚ᵛ𝕚a❣️ steal it")
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Stickers.png"
     file = await event.client.download_file(reply_message.media)
@@ -237,7 +237,7 @@ async def _(event):
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await ubot.upload_file(file, file_name=file_ext_ns_ion)
         packname = f"{first_name}'s Animated Sticker Vol.{pack}"
-        packshortname = f"DaisyX_animated_{userid}"
+        packshortname = f"Ol𝕚ᵛ𝕚a❣️_animated_{userid}"
     elif not is_message_image(reply_message):
         await kanga.edit("Oh no.. This Message type is invalid")
         return
@@ -249,7 +249,7 @@ async def _(event):
                 sticker, file_name=file_ext_ns_ion
             )
 
-    await kanga.edit("This Sticker is Gonna Get Stolen.....")
+    await kanga.edit("This Sticker is Gonna Get Stolen by Ol𝕚ᵛ𝕚a❣️.....")
 
     async with ubot.conversation("@Stickers") as d_conv:
         now = datetime.datetime.now()
