@@ -37,7 +37,7 @@ async def Lycia(_, message):
         return
     text = message.text.split(None, 1)[1]
     lycia = text.replace(" ", "%20")
-    m = await message.reply_text("Daisyx Is Best...")
+    m = await message.reply_text("Ol𝕚ᵛ𝕚a❣️ Is Best...")
     try:
         L = await fetch(
             f"https://api.affiliateplus.xyz/api/chatbot?message={lycia}&botname=Ol𝕚ᵛ𝕚a❣️&ownername=UseLess_group_xd&user=1"
